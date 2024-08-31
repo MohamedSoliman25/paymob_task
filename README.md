@@ -14,7 +14,7 @@ MovieApp is a simple Android application that displays a list of movies fetched 
 
 You can download the APK of the app from the link below:
 
-[Download MovieApp APK]([https://drive.google.com/your-google-drive-apk-link](https://drive.google.com/file/d/1WN7JAuoJjx9CfMw0HU0QTYMgfmlQqKSd/view?usp=sharing](https://drive.google.com/file/d/1WN7JAuoJjx9CfMw0HU0QTYMgfmlQqKSd/view)))
+[Download MovieApp APK][https://drive.google.com/your-google-drive-apk-link](https://drive.google.com/file/d/1WN7JAuoJjx9CfMw0HU0QTYMgfmlQqKSd/view?usp=sharing](https://drive.google.com/file/d/1WN7JAuoJjx9CfMw0HU0QTYMgfmlQqKSd/view))
 
 ## Architecture
 
