@@ -10,11 +10,11 @@ MovieApp is a simple Android application that displays a list of movies fetched 
 - **Favorite Movies**: Users can mark movies as favorites, and the favorite status is stored locally in a Room database.
 - **Offline Access**: Favorite movies are saved locally, allowing users to view their favorite list even when offline.
 
-  ## Download
+## Download
 
 You can download the APK of the app from the link below:
 
-[Download MovieApp APK]([https://drive.google.com/your-google-drive-apk-link](https://drive.google.com/file/d/1WN7JAuoJjx9CfMw0HU0QTYMgfmlQqKSd/view?usp=sharing](https://drive.google.com/file/d/1WN7JAuoJjx9CfMw0HU0QTYMgfmlQqKSd/view))
+[Download MovieApp APK]([https://drive.google.com/your-google-drive-apk-link](https://drive.google.com/file/d/1WN7JAuoJjx9CfMw0HU0QTYMgfmlQqKSd/view?usp=sharing](https://drive.google.com/file/d/1WN7JAuoJjx9CfMw0HU0QTYMgfmlQqKSd/view)))
 
 ## Architecture
 
