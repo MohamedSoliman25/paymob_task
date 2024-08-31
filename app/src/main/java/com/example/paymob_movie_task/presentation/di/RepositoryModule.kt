@@ -1,5 +1,6 @@
 package com.example.paymob_movie_task.presentation.di
 
+import com.example.paymob_movie_task.data.local.dao.MovieDao
 import com.example.paymob_movie_task.data.remote.MovieApi
 import com.example.paymob_movie_task.data.repository.MovieRepositoryImpl
 import com.example.paymob_movie_task.domain.repository.MovieRepository
@@ -16,8 +17,9 @@ object RepositoryModule {
     @Provides
     @Singleton
     fun provideMovieRepository(
-        api: MovieApi
+        api: MovieApi,
+        dao: MovieDao
     ): MovieRepository {
-        return MovieRepositoryImpl(api)
+        return MovieRepositoryImpl(api,dao)
     }
 }

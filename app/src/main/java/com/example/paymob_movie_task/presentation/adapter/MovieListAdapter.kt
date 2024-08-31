@@ -66,11 +66,11 @@ class MovieListAdapter(
         fun bind(movie: Movie, onItemClick: (Movie) -> Unit, onFavoriteClick: (Movie) -> Unit) {
             binding.apply {
                 textViewMovieName.text = movie.title
-                textViewReleaseDate.text = movie.release_date
-                textViewRating.text = movie.vote_average.toString()
+                textViewReleaseDate.text = movie.releaseDate
+                textViewRating.text = movie.voteAverage.toString()
 
                 Glide.with(root.context)
-                    .load("https://image.tmdb.org/t/p/w500/${movie.poster_path}")
+                    .load("https://image.tmdb.org/t/p/w500/${movie.posterPath}")
                     .into(imageViewPoster)
 
                 imageViewFavoriteIcon.setImageResource(
@@ -78,6 +78,9 @@ class MovieListAdapter(
                 )
 
                 imageViewFavoriteIcon.setOnClickListener {
+//                    imageViewFavoriteIcon.setImageResource(
+//                        if (movie.isFavorite) R.drawable.baseline_favorite else R.drawable.baseline_favorite_border
+//                    )
                     onFavoriteClick(movie)
                 }
                 root.setOnClickListener {
