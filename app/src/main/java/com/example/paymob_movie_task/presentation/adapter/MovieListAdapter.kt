@@ -78,9 +78,6 @@ class MovieListAdapter(
                 )
 
                 imageViewFavoriteIcon.setOnClickListener {
-//                    imageViewFavoriteIcon.setImageResource(
-//                        if (movie.isFavorite) R.drawable.baseline_favorite else R.drawable.baseline_favorite_border
-//                    )
                     onFavoriteClick(movie)
                 }
                 root.setOnClickListener {

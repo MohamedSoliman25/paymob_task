@@ -1,5 +1,7 @@
 package com.example.paymob_movie_task.domain.model
 
+import java.io.Serializable
+
 data class Movie(
     val id: Int,
     val title: String,
@@ -9,4 +11,4 @@ data class Movie(
     val overview: String,
     val originalLanguage: String,
     var isFavorite: Boolean = false
-)
+): Serializable

@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:padding="12dp">
 
-        <!-- Movie Poster -->
         <ImageView
             android:id="@+id/imageViewPoster"
             android:layout_width="0dp"
@@ -27,7 +26,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:contentDescription="Movie Poster" />
 
-        <!-- Movie Details Container -->
         <LinearLayout
             android:id="@+id/linearLayoutDetails"
             android:layout_width="0dp"
@@ -39,12 +37,10 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent">
 
-            <!-- Movie Name and Favorite Icon Container -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <!-- Movie Name -->
                 <TextView
                     android:id="@+id/textViewMovieName"
                     android:layout_width="wrap_content"
@@ -57,7 +53,6 @@
                     android:layout_alignParentStart="true"
                     android:layout_toStartOf="@+id/imageViewFavoriteIcon"/>
 
-                <!-- Favorite Icon -->
                 <ImageView
                     android:id="@+id/imageViewFavoriteIcon"
                     android:layout_width="24dp"
@@ -68,21 +63,19 @@
                     android:contentDescription="Favorite Icon" />
             </RelativeLayout>
 
-            <!-- Movie Rating -->
             <TextView
                 android:id="@+id/textViewRating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rating: 8.5"
+                android:text="Rating: 10.0"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:layout_marginTop="8dp"/>
 
-            <!-- Release Date -->
             <TextView
                 android:id="@+id/textViewReleaseDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Release Date: 2023-08-31"
+                android:text="Release Date: 2024-08-31"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:layout_marginTop="4dp"/>
 

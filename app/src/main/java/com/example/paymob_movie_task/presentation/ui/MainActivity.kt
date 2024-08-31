@@ -1,5 +1,6 @@
 package com.example.paymob_movie_task.presentation.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -11,6 +12,7 @@ import com.example.paymob_movie_task.databinding.ActivityMainBinding
 import com.example.paymob_movie_task.domain.model.Movie
 import com.example.paymob_movie_task.presentation.adapter.MovieListAdapter
 import com.example.paymob_movie_task.presentation.viewmodel.MovieViewModel
+import com.example.paymob_movie_task.utils.MyUtils
 import com.example.paymob_movie_task.utils.UiState
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -24,9 +26,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initRecyclerView()
-        getAllMovies(2024,"vote_average.desc")
         observeAllMovies()
 
+    }
+
+    override fun onResume() {
+        super.onResume()
+        getAllMovies(2024,"vote_average.desc")
     }
 
     private fun getAllMovies(releaseYear:Int,sortBy:String){
@@ -60,6 +66,9 @@ class MainActivity : AppCompatActivity() {
     }
     private fun onItemClick(movie: Movie){
         Log.d(TAG, "onItemClick: "+movie)
+        val intent = Intent(this@MainActivity, MovieDetailsActivity::class.java)
+        intent.putExtra(MyUtils.MOVIE_ITEM, movie)
+        startActivity(intent)
     }
     private fun onFavoriteClick(movie: Movie){
 
